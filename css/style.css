@@ -1,0 +1,80 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.home{
+    background-image: url('../images/drew-coffman-1872.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+}
+.home .home-text .scroll-circle{
+    width: 50px;
+    height: 70px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.home .home-text .scroll-circle .small-circle{
+    width: 5px;
+    height: 5px;
+    background-color: #DEE2E6;
+    top: 5px;
+    left: 50%;
+    border-radius: 50%;
+    animation: circle 2s infinite linear ;
+    
+}
+@keyframes circle {
+    0%{
+        top: 5px;
+        opacity: 1;
+    }
+    100%{
+        top: 90%;
+        opacity: 0;
+    }
+}
+.image-and-text .image{ 
+    width: 600px; 
+height: 600px;
+    overflow: hidden;
+}
+.image-and-text .image img{
+    transition: .4s all;
+}
+.image-and-text .image img:hover{
+    transform: scale(1.1);
+}
+.card-section .card img{
+    transform: rotate(10deg) scale(1.2);
+    transition: 0.4s all;
+}
+.card img:hover{
+    transform: scale(1.2) rotate(-10deg);
+    width: 100%;
+    /* transform: ; */
+}
+.card-section .card{
+    transition: .4s all;
+}
+.card-section .card:hover{
+    background-color: #A9652D;
+    color: white;
+}
+footer{
+    background-color: #A9652D;
+}
+footer ul li{
+    position: relative;
+}
+footer ul li::before{
+    content: ">";
+    left: -20px;
+    top: 7px;
+    position: absolute;
+}
